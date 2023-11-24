@@ -10,11 +10,11 @@ import { Graphics1Component } from './graphics1/graphics1.component';
 
 const routes: Routes = [
   {
-    path: 'dashboard',
+    path: '',
     component: PagesComponent,
     children: [
       {
-        path: ' ',
+        path: 'dashboard',
         component: DashboardComponent,
       },
       {
@@ -22,7 +22,7 @@ const routes: Routes = [
         component: ProgressComponent,
       },
       {
-        path: 'graphics1',
+        path: 'graphic1',
         component: Graphics1Component,
       },
     ],
@@ -30,7 +30,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
 export class PagesRoutingModule {}
