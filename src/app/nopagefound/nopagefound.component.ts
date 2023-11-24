@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
       .error-box {
         height: 100%;
         position: fixed;
-        background: url(../../../assets/images/background/error-bg.jpg)
-          no-repeat center center #fff;
+        background: url(../../assets/images/background/error-bg.jpg) no-repeat
+          center center #fff;
         width: 100%;
       }
       .error-box .footer {
